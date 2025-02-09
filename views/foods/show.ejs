@@ -1,0 +1,17 @@
+<%- include('../partials/head') %>
+
+        <h1><%= item.name %></h1> 
+                   
+
+                   <form action="/users/<%= user._id %>/foods/<%= item._id %>?_method=DELETE" method="POST">
+                
+                    <button type="submit" class="btn btn-warning">Delete item</button>
+                     </form>
+                     
+                     <a href="/users/<%= user._id %>/foods/<%= item._id %>/edit">
+                        <button type="submit" class="btn btn-warning">Edit</button>
+                    </a>
+
+                
+
+<%- include('../partials/footer') %>

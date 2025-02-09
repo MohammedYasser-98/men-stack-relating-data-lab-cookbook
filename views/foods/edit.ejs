@@ -1,0 +1,11 @@
+<%- include('../partials/head') %>
+
+        <h1>Edit Item</h1>  
+        
+        <form action="/users/<%= user._id %>/foods/<%= item._id %>?_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= item.name %>">
+                <button type="submit">Edit item</button>
+        </form>
+
+
+<%- include('../partials/footer') %>

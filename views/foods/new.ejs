@@ -1,0 +1,11 @@
+<%- include('../partials/head') %>
+
+        <h1>Add New Item</h1>  
+        
+        <form action="/users/<%= user._id %>/foods" method="POST">
+                <input type="text" name="name">
+                <button type="submit">Add item</button>
+        </form>
+
+
+<%- include('../partials/footer') %>

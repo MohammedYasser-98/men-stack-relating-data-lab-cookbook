@@ -1,0 +1,20 @@
+<%- include('../partials/head') %>
+
+        <h1>Welcome to my Pantry</h1> 
+
+        <%= msg %>
+        <% pantry.forEach((item)=>{ %>
+            <ul>
+                <li>
+                   <%= item.name %>
+
+                   <form action="/users/<%= user._id %>/foods/<%= item._id %>">
+                
+                    <button type="submit">Show item</button>
+                     </form>
+
+                </li>
+            </ul>
+      <%  }) %>
+
+<%- include('../partials/footer') %>

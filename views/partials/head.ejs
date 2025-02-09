@@ -24,6 +24,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="/auth/sign-out">Sign Out</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/users/<%=user._id%>/foods">View my Pantry</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/users/<%=user._id%>/foods/new">Add New Item</a>
+              </li>
+
               <% } else { %>
               <li class="nav-item">
                 <a class="nav-link" href="/auth/sign-up">Sign Up</a>
